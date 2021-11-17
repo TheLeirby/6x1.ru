@@ -12,7 +12,7 @@ const text = [
       let interval = setTimeout(
         () => {
           result += text[line][count]
-          document.querySelector('h1').innerHTML =result +'|';
+          document.querySelector('pre').innerHTML =result +'|';
   
   
         count++;
@@ -21,7 +21,7 @@ const text = [
           line++;
           if (line == text.length) {
             clearTimeout(interval);
-             document.querySelector('h1').innerHTML =result;
+             document.querySelector('pre').innerHTML =result;
             return true;
           }
         }
